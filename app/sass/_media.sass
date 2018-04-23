@@ -1,38 +1,308 @@
 @import "vars"
-
-
-/*==========  Desktop First  ==========*/
-
-
-//Extra large: ≥1200px
+//Extra large: ≥1440px
 +media-breakpoint-down(xl)
-
-//Large: ≥992px
+	.service-modal
+		width: 1380px
+	
+//Large: ≥1200px
 +media-breakpoint-down(lg)
+	.service-modal
+		width: 1170px
+	.nav-mnu
+		&__li
+			max-width: 95px
+			margin-right: 20px
+	.nav-phone
+		padding-left: 28px
+		background-size: 20px
+		background-position: left center
+	.team:before
+		content: ''
+		width: 500px
+		height: 500px
+		top: 200px
+		margin-left: -250px
+	.team-item
+		&__img
+			max-width: 379px
+		&__wrap
+			margin-top: 200px
+	.service-item
+		min-height: 277px
+		&__img
+			max-width: 200px
 
-//Medium: ≥768px
+//Medium: ≥992px
 +media-breakpoint-down(md)
+	.service-modal
+		width: 960px
+	.nav-logo
+		max-width: 180px
+		margin: 20px 0 0
+	.nav-mnu
+		&__li
+			max-width: inherit
+			margin-right: 43px
+			a
+				padding: 20px 0
+				min-height: inherit
+	.result-list
+		li
+			font-size: 20px
+	.price-form
+		&__btn
+			padding: 15px 50px
+	.equipment__dot.dot7
+		left: 11%
+	.equipment__txt.txt5
+		left: 19%
+	.equipment__txt.txt7
+		left: 14%
+	.foot-phone
+		&__link
+			font-size: 12px
+	.foot-mnu
+		&__li
+			font-size: 14px
+	.form-inner:after
+		width: 100%
+		height: 100%
+		top: 0	
+		left: 0
+		margin-top: 0	
+		background-size: cover
+	.service-modal .price-form
+		padding: 30px 60px
 
-//Small: ≥576px
+//Small: ≥768px
 +media-breakpoint-down(sm)
+	.head
+		background: url(../img/head_bg.jpg) top center no-repeat
+	.service-modal
+		width: 750px
+	.nav-mnu
+		&__li
+			margin-right: 10px
+			a
+				font-size: 13px
+	.team-item
+		&__wrap
+			float: none
+			margin: 200px auto 0
+		&__img
+			z-index: -1
+			top: 0
+			bottom: inherit
+	.result-list_after
+		float: none
+	.price
+		margin-bottom: 0
+	.title
+		font-size: 30px
+	.contacts-item
+		&__ttl
+			font-size: 20px
+		&__txt
+			font-size: 20px
+	.foot
+		background-image: none
+		background-color: #000
+		.nav-logo
+			margin: 0 auto 20px
+	.foot-mnu
+		&__li:last-child
+			margin-bottom: 20px
+	.foot-phone__link:last-child
+	.cprt
+		display: table
+		margin: 0 auto
+	.service-item:last-child
+		margin-bottom: 40px
+	.equipment__txt.txt3
+		left: 28%
+	.service-modal .price-form
+		margin-top: 40px
+	.video
+		width: 700px
+		height: 394px
+
+//Extra small: ≥576px
++media-breakpoint-down(xs)
+	.service-modal
+		width: 100%
+	.nav-logo
+		margin: 20px 0
+	.first-form
+		&:after, &:before
+		display: none
+	.form
+		padding-top: 45px
+		&:before
+			display: none
+	.equipment__dot.dot7
+		display: none
+	.contacts
+		background-color: #000
+		background-image: none
+	.contacts-item.last
+		margin-top: 40px
+	.team:before
+		display: none
+	.video
+		width: 520px
+		height: 290px
 
 //Extra small: >0
-+media-breakpoint-down(xs)
++media-breakpoint-down(xxs)
+	.nav-logo
+		margin: 20px auto
+	.nav-phone
+		display: table
+		float: none
+		margin: 0 auto 20px
+	.head__ttl
+		font-size: 26px
+	.head__subttl
+		font-size: 16px
+	.head__btn
+		font-size: 12px
+		text-align: center
+	.form-chouse
+		max-width: 320px
+		max-height: 373px
+		&__left
+			font-size: 14px
+			&.txt1
+				top: 115px
+			&.txt2
+				top: 220px
+		&__right
+			font-size: 14px
+			&.txt3
+				right: 55px
+				top: 168px
+	.form-chouse__item
+		width: 15px
+		height: 15px
+		&.item1
+			top: 10px
+			left: 142px
+		&.item2
+			top: 16px
+			left: 122px
+		&.item3
+			top: 27px
+			left: 109px
+		&.item4
+			top: 42px
+			left: 97px
+		&.item5
+			top: 67px
+			left: 88px
+		&.item6
+			top: 95px
+			left: 82px
+		&.item7
+			top: 124px
+			left: 76px
+		&.item8
+			top: 154px
+			left: 72px
+		&.item9
+			top: 10px
+			right: 141px
+		&.item10
+			top: 17px
+			right: 123px
+		&.item11
+			top: 28px
+			right: 109px
+		&.item12
+			top: 42px
+			right: 96px
+		&.item13
+			top: 67px
+			right: 87px
+		&.item14
+			top: 95px
+			right: 78px
+		&.item15
+			top: 122px
+			right: 72px
+		&.item16
+			top: 151px
+			right: 66px
+		&.item17
+			bottom: 10px
+			left: 142px
+		&.item18
+			bottom: 16px
+			left: 122px
+		&.item19
+			bottom: 27px
+			left: 109px
+		&.item20
+			bottom: 42px
+			left: 97px
+		&.item21
+			bottom: 67px
+			left: 88px
+		&.item22
+			bottom: 95px
+			left: 82px
+		&.item23
+			bottom: 124px
+			left: 76px
+		&.item24
+			bottom: 154px
+			left: 72px
+		&.item25
+			bottom: 10px
+			right: 141px
+		&.item26
+			bottom: 17px
+			right: 123px
+		&.item27
+			bottom: 28px
+			right: 109px
+		&.item28
+			bottom: 42px
+			right: 96px
+		&.item29
+			bottom: 67px
+			right: 87px
+		&.item30
+			bottom: 95px
+			right: 78px
+		&.item31
+			bottom: 122px
+			right: 72px
+		&.item32
+			bottom: 151px
+			right: 66px
+	.form-inner__btn
+		font-size: 14px
+	.team-item__wrap
+		padding: 30px
+		margin-top: 350px
+		&:before, &:after
+			display: none
+	.team-item__img
+		bottom: 50px
+	.price-form
+		padding: 30px
+	.price-form__btn
+		font-size: 14px
+	.grey-bg, .equipment
+		display: none
+	.carousel-image
+		max-width: 290px
+	.service-modal .price-form
+		padding: 0
+		box-shadow: none
+		&:before
+			display: none
+	.video
+		width: 100%
+		height: 280px
 
-
-/*==========  Mobile First  ==========*/
-
-//Extra small: <576px
-+media-breakpoint-up(xs)
-
-//Small: ≤576px
-+media-breakpoint-up(sm)
-
-//Medium: ≤768px
-+media-breakpoint-up(md)
-
-//Large: ≤992px
-+media-breakpoint-up(lg)
-
-//Extra large: ≤1200px
-+media-breakpoint-up(xl)

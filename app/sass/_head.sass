@@ -16,13 +16,12 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.5
+	line-height: 1.4
 	font-family: $default-font
 	overflow-x: hidden
-	background-color: #333333
+	background-color: #fff
 	input, textarea
 		outline: none
-
 
 .img-responsive
 	display: block
@@ -38,3 +37,110 @@ h1, h2, h3, h4
 a:hover
 	text-decoration: none
 	color: initial
+
+.clearfix
+	&:before
+		content: ''
+		display: table
+	&:after
+		content: ''
+		display: table
+		clear: both
+
+.nav
+	background-image: url(../img/nav_bg.jpg)
+	background-size: contain
+	background-position: center center
+	&-logo
+		margin: 0 auto
+	&-mnu
+		list-style-type: none
+		margin-bottom: 0
+		padding-left: 0
+		&__li
+			position: relative
+			max-width: 115px
+			display: inline-block
+			vertical-align: middle
+			margin-right: 38px
+			&:last-child
+				margin-right: 0
+			a
+				display: table
+				min-height: 120px
+				padding: 37px 0
+				font-size: 14px
+				text-align: center
+				color: #fff
+				transition: all ease .3s
+				border-bottom: 7px solid transparent
+				&:hover
+					color: $accent
+					border-color:  #fff
+				span
+					display: table-cell
+					vertical-align: middle
+	&-phone
+		padding-left: 45px
+		background-image: url(../img/phone_call.png)
+		background-size: 32px 32px
+		background-position: 0 8px
+		background-repeat: no-repeat
+		float: right
+		a
+			display: block
+			color: #fff
+			font-size: 14px
+			line-height: 1.75
+
+.flex
+	display: flex
+	min-height: 700px
+	&-wrap
+		width: 100%
+		margin: auto
+
+.head
+	position: relative
+	min-height: 750px
+	//background: url(../img/head_bg.jpg) top center no-repeat
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		background-color: rgba(#343434, 0.25)
+		position: absolute
+		top: 0
+		left: 0
+	&__ttl
+		font-family: $bold
+		color: #fff
+		font-size: 36px
+		line-height: 1.4
+		text-transform: uppercase
+		margin-bottom: 40px
+	&__subttl
+		color: #fff
+		font-size: 30px
+		margin-bottom: 40px
+	&__btn
+		display: table
+		padding: 25px 35px
+		background-color: $accent
+		font-family: $bold
+		font-size: 20px
+		color: #fff
+		text-transform: uppercase
+		transition: all ease .3s
+		&:hover
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+.video_bg
+	position: absolute
+	min-width: 100%
+	min-height: 100%
+	width: auto
+	height: auto
+	bottom: 0
+	right: 0
+	z-index: -1

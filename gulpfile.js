@@ -28,7 +28,7 @@ gulp.task('sass', function() {
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
-	.pipe(purge())
+	//.pipe(purge())
 	.pipe(gulp.dest('app/css'))
 	.pipe(browsersync.reload( {stream: true} ))
 });
@@ -39,6 +39,10 @@ gulp.task('js', function() {
 		'app/libs/fancybox/dist/jquery.fancybox.min.js',
 		'app/libs/required_fields/jquery.maskedinput.min.js',
 		'app/libs/required_fields/required_fields.js',
+		'app/libs/jQueryFeatureCarousel/jquery.featureCarousel.js',
+		'app/libs/twentytwenty-master/js/jquery.event.move.js',
+		'app/libs/twentytwenty-master/js/jquery.twentytwenty.js',
+		'app/libs/slick-carousel/slick/slick.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
@@ -64,6 +68,7 @@ gulp.task('build', ['removedist', 'sass', 'js', 'imagemin'], function() {
 	var buildFiles = gulp.src([
 		'app/*.html',
 		'app/**/*.php',
+		'app/mov/*',
 		'app/.htaccess'
 		]).pipe(gulp.dest('dist'));
 

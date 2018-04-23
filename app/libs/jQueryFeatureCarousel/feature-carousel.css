@@ -1,0 +1,43 @@
+/********************
+ * FEATURE CAROUSEL *
+ ********************/
+.carousel-container {
+  position:relative;
+  width:100%;
+}
+#carousel,
+#carousel2 {
+  height:500px;
+  width:100%;
+  position:relative;
+  margin-bottom: 20px;
+}
+.carousel-image {
+  border:0;
+  display:block;
+}
+.carousel-feature {
+  position:absolute;
+  top:-1000px;
+  left:-1000px;
+  cursor:pointer;
+}
+.carousel-feature .carousel-caption {
+  position:absolute;
+  bottom:-50px;
+  width:100%;
+}
+#carousel-left,
+#carousel-left2 {
+  position:absolute;
+  bottom:-100px;
+  left:220px;
+  cursor:pointer;
+}
+#carousel-right,
+#carousel-right2 {
+  position:absolute;
+  bottom:-100px;
+  right:220px;
+  cursor:pointer;
+}
