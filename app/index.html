@@ -2,14 +2,26 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Aldente</title>
-	<meta name="description" content="">
+	<title>Стоматологические услуги для всей семьи - AlDente</title>
+	<meta name="description" content="Сеть стоматологических клиник AlDente предлагает безболезненное лечение ваших зубов для всей семьи. От лечения кариеса, отбеливания зубов до протезирования, виниров и сложной хирургической стоматологии">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
+	<meta property="og:title" content="Стоматологические услуги для всей семьи - AlDente">
+	<meta property="og:description" content="Сеть стоматологических клиник AlDente предлагает безболезненное лечение ваших зубов для всей семьи. От лечения кариеса, отбеливания зубов до протезирования, виниров и сложной хирургической стоматологии">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://aldente.in.ua">
+	<meta property="og:image" content="http://aldente.in.ua/img/carousel/1.png"/>
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#FF0000">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118069444-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-118069444-1');
+	</script>
 </head>
 <body>
 
@@ -38,8 +50,8 @@
 				</div>
 				<div class="col-lg-2 d-none d-lg-block">
 					<div class="nav-phone">
-						<a href="tel:+380670502222" class="nav-phone__link">+38(067) 050 22 22</a>
-						<a href="tel:+380670502222" class="nav-phone__link">+38(067) 050 22 22</a>
+						<a href="tel:+380672464675" class="nav-phone__link">+38(067) 246 46 75</a>
+						<a href="tel:+380672483844" class="nav-phone__link">+38(067) 248 38 44</a>
 					</div>
 				</div>
 			</div>
@@ -244,6 +256,7 @@
 				<div class="col-md-6 align-self-center">
 					<form action="mail.php" method="POST" class="form_check form-inner">
 						<input type="hidden" name="title" value="Записаться на бесплатный осмотр">
+						<input type="hidden" name="goal" value="goal1">
 						<div class="rline">
 							<p class="rline__name">Выбранные зубы</p>
 							<input type="text" name="teeth" class="form-inner__input">
@@ -428,6 +441,7 @@
 				</div>
 				<div class="col-lg-5 offset-lg-1 col-md-6">
 					<form data-id="price-form" action="mail.php" method="POST" class="form_check price-form">
+						<input type="hidden" name="goal" value="goal2">
 						<input type="hidden" name="title" value="Скачать прайс-лист">
 						<h3 class="price-form__ttl">Скачайте прайс-лист</h3>
 						<div class="rline">
@@ -547,7 +561,7 @@
 						<p class="contacts-item__txt">г. Киев, ул. Анны Ахматовой, 7/15</p>
 						<div class="map" id="map1"></div>
 						<h3 class="contacts-item__ttl">Запись на прием:</h3>
-						<a href="tel:+380671004930" class="contacts-item__txt">+38(067) 100 49 30</a>
+						<a href="tel:+380672464675" class="contacts-item__txt">+38 (067) 246 46 75</a>
 						<h3 class="contacts-item__ttl">Время работы:</h3>
 						<p class="contacts-item__txt">Пн-Пт с <strong>9:00</strong> до <strong>20:00</strong></p>
 					</div>
@@ -558,7 +572,7 @@
 						<p class="contacts-item__txt">г. Киев, ул. Урловская, 9</p>
 						<div class="map" id="map2"></div>
 						<h3 class="contacts-item__ttl">Запись на прием:</h3>
-						<a href="tel:+380671004930" class="contacts-item__txt">+38(067) 100 49 30</a>
+						<a href="tel:+380672483844" class="contacts-item__txt">+38 (067) 248 38 44</a>
 						<h3 class="contacts-item__ttl">Время работы:</h3>
 						<p class="contacts-item__txt">Пн-Пт с <strong>9:00</strong> до <strong>20:00</strong></p>
 					</div>
@@ -640,6 +654,7 @@
 				<div class="col-md-6">
 					<form action="mail.php" method="POST" class="form_check price-form">
 						<input type="hidden" name="title" value="Записаться на прием - Терапия">
+						<input type="hidden" name="goal" value="goal3">
 						<h3 class="price-form__ttl">Запишитесь на прием</h3>
 						<div class="rline">
 							<p class="rline__name">Ваше имя</p>
@@ -689,6 +704,7 @@
 				<div class="col-md-6">
 					<form action="mail.php" method="POST" class="form_check price-form">
 						<input type="hidden" name="title" value="Записаться на прием - Протезирование">
+						<input type="hidden" name="goal" value="goal3">
 						<h3 class="price-form__ttl">Запишитесь на прием</h3>
 						<div class="rline">
 							<p class="rline__name">Ваше имя</p>
@@ -727,6 +743,7 @@
 				<div class="col-md-6">
 					<form action="mail.php" method="POST" class="form_check price-form">
 						<input type="hidden" name="title" value="Записаться на прием - Хирургия">
+						<input type="hidden" name="goal" value="goal3">
 						<h3 class="price-form__ttl">Запишитесь на прием</h3>
 						<div class="rline">
 							<p class="rline__name">Ваше имя</p>
@@ -767,6 +784,7 @@
 				<div class="col-md-6">
 					<form action="mail.php" method="POST" class="form_check price-form">
 						<input type="hidden" name="title" value="Записаться на прием - Ортодонтия">
+						<input type="hidden" name="goal" value="goal3">
 						<h3 class="price-form__ttl">Запишитесь на прием</h3>
 						<div class="rline">
 							<p class="rline__name">Ваше имя</p>
@@ -805,6 +823,7 @@
 				<div class="col-md-6">
 					<form action="mail.php" method="POST" class="form_check price-form">
 						<input type="hidden" name="title" value="Записаться на прием - Имплантация">
+						<input type="hidden" name="goal" value="goal3">
 						<h3 class="price-form__ttl">Запишитесь на прием</h3>
 						<div class="rline">
 							<p class="rline__name">Ваше имя</p>
@@ -841,6 +860,7 @@
 				<div class="col-md-6">
 					<form action="mail.php" method="POST" class="form_check price-form">
 						<input type="hidden" name="title" value="Записаться на прием - Виниры">
+						<input type="hidden" name="goal" value="goal3">
 						<h3 class="price-form__ttl">Запишитесь на прием</h3>
 						<div class="rline">
 							<p class="rline__name">Ваше имя</p>
@@ -878,6 +898,7 @@
 				<div class="col-md-6">
 					<form action="mail.php" method="POST" class="form_check price-form">
 						<input type="hidden" name="title" value="Записаться на прием - Отбеливание">
+						<input type="hidden" name="goal" value="goal3">
 						<h3 class="price-form__ttl">Запишитесь на прием</h3>
 						<div class="rline">
 							<p class="rline__name">Ваше имя</p>
@@ -916,6 +937,7 @@
 				<div class="col-md-6">
 					<form action="mail.php" method="POST" class="form_check price-form">
 						<input type="hidden" name="title" value="Записаться на прием - Детская стоматология">
+						<input type="hidden" name="goal" value="goal3">
 						<h3 class="price-form__ttl">Запишитесь на прием</h3>
 						<div class="rline">
 							<p class="rline__name">Ваше имя</p>
@@ -952,6 +974,7 @@
 				<div class="col-md-6">
 					<form action="mail.php" method="POST" class="form_check price-form">
 						<input type="hidden" name="title" value="Записаться на прием - Плазмолифтинг">
+						<input type="hidden" name="goal" value="goal3">
 						<h3 class="price-form__ttl">Запишитесь на прием</h3>
 						<div class="rline">
 							<p class="rline__name">Ваше имя</p>
@@ -987,6 +1010,7 @@
 				<div class="col-md-6">
 					<form action="mail.php" method="POST" class="form_check price-form">
 						<input type="hidden" name="title" value="Записаться на прием - Синус-лифтинг">
+						<input type="hidden" name="goal" value="goal3">
 						<h3 class="price-form__ttl">Запишитесь на прием</h3>
 						<div class="rline">
 							<p class="rline__name">Ваше имя</p>
@@ -1023,7 +1047,8 @@
 				</div>
 				<div class="col-md-6">
 					<form action="mail.php" method="POST" class="form_check price-form">
-						<input type="hidden" name="title" value="Записаться на прием - Синус-лифтинг">
+						<input type="hidden" name="title" value="Записаться на прием - Чистка зубов">
+						<input type="hidden" name="goal" value="goal3">
 						<h3 class="price-form__ttl">Запишитесь на прием</h3>
 						<div class="rline">
 							<p class="rline__name">Ваше имя</p>

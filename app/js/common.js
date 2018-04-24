@@ -61,7 +61,7 @@ $(function() {
 				}
 				$.fancybox.close();
 				$.fancybox.open('<div class="thn"><h3>Заявка отправлена!</h3><p>С Вами свяжутся в ближайшее время.</p></div>');
-				//gtag('event','submit',{'event_category':'submit','event_action':goalId});
+				gtag('event','submit',{'event_category':'submit','event_action':goalId});
 				//fbq('track', 'Lead');
 			})()
 		});
