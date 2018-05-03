@@ -62,6 +62,7 @@ $(function() {
 				$.fancybox.close();
 				$.fancybox.open('<div class="thn"><h3>Заявка отправлена!</h3><p>С Вами свяжутся в ближайшее время.</p></div>');
 				gtag('event','submit',{'event_category':'submit','event_action':goalId});
+				yaCounter48730871.reachGoal(goalId);
 				//fbq('track', 'Lead');
 			})()
 		});
@@ -112,18 +113,18 @@ $(function() {
 		var el = $(this).attr('href'); 
 		if($(this).hasClass('active')) {
 			$(this).removeClass('active');
-			if($('input[name="teeth"]').val().length > 2) {
+			if($('input[name="teeth"]').val().length > 3) {
 				elm = ', ';
 			} else {
 				elm = ''; 
 			}
-			if($('input[name="teeth"]').val().substr(0, 2) == el.slice(-3)) {
+			if($('input[name="teeth"]').val().substr(0, 3) == el.slice(-3)) {
 				elm = ''; 
 				elm2 = ', ';
 			} else {
 				elm2 = '';
 			}
-			if($('input[name="teeth"]').val().length == 2) {
+			if($('input[name="teeth"]').val().length == 3) {
 				$('input[name="teeth"]').val('');    
 			}
 			$('input[name="teeth"]').val($('input[name="teeth"]').val().replace(elm+el.slice(-3)+elm2, ''));
